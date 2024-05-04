@@ -1,0 +1,134 @@
+
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+} 
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container header::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -2px;
+   height: 3px;
+   width: 50px;
+   border-radius: 8px ;
+   background-color: #4070f4;
+}
+aside {
+    background-color: aliceblue;
+    width: 20%;
+    text-align: center;
+    float: left;
+    overflow: inherit;
+    border: 3px solid #4070f4;
+    border-radius: 20px;
+}
+section{
+    background-color: aliceblue;
+    width: 38%;
+    text-align: center;
+    float: left;
+    overflow: inherit;
+    border: 3px solid #4070f4;
+    border-radius: 20px;
+    height: 12.29rem;
+}
+article{
+    background-color: aliceblue;
+    width: 40%;
+    text-align: center;
+    float: right;
+    overflow: inherit;
+    border: 3px solid #4070f4;
+    border-radius: 18px;
+    height: 12.29rem;
+}
+h4 {
+    text-align: center;
+}
+.paragraph{
+    max-width: 90%;
+    height: 6.7rem;
+    border-radius: 10px;
+}
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: ghostwhite;
+    transition: width 200ms ease;
+}
+.ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.li{
+    width: 100%;
+}
+.li:last-child{
+    margin-top: auto;
+}
+.link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+}
+.link:hover{
+    background-color: lightblue;
+}
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+.link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.navbar:hover{
+    width: 17rem;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1 rem;
+    text-align: center;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    font-size: 2em;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>APP</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png";>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+   <header>
+    <h2 id="logo">HealHub</h2>
+   </header>
+
+   <main>
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-box">
+                        <input id="lusername"type="text" placeholder="Username" required >
+                    </div>
+                    <div class="input-box">
+                        <input id="lpassword" type="password" placeholder="Password" required >
+                    </div>
+                    <button id="Login"type="submit" class="button">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box Register">
+                <h2 >Registration</h2>
+                <form id="account" method="post">
+                    <div class="input-box">
+                        <input id="username" type="text" placeholder="Username" required >
+                    </div>
+                    <div class="input-box">
+                        <input id="password" type="password" placeholder="Password" required >
+                    </div>
+                    <button id="Register" type="submit" class="button">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>   
+   </main>
+
+   <footer>
+   
+   </footer>
+   
+   <script type="module" src="index.js"></script>
+</body>
+</html>

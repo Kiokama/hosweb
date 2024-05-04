@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>APP</title>
+    <link rel="icon" type="image/png" href="favicon.png";>
+    <link rel="stylesheet" href="style/medicin.css">
+    <style>
+        input::placeholder {
+            font-weight: 700;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <ul class="ul">
+            <li class="logo">
+                <a href="medicin.html" class="link">
+                    <span class="link-text">HealHub</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M232 0c-39.8 0-72 32.2-72 72v8H72C32.2 80 0 112.2 0 152V440c0 39.8 32.2 72 72 72h.2 .2 .2 .2 .2H73h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2H75h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2H77h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2H79h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2H82h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2H85h.2 .2 .2 .2H86h.2 .2 .2 .2H87h.2 .2 .2 .2H88h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2H98h.2 .2 .2 .2H99h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2v0H456h8v0H568c39.8 0 72-32.2 72-72V152c0-39.8-32.2-72-72-72H480V72c0-39.8-32.2-72-72-72H232zM480 128h88c13.3 0 24 10.7 24 24v40H536c-13.3 0-24 10.7-24 24s10.7 24 24 24h56v48H536c-13.3 0-24 10.7-24 24s10.7 24 24 24h56V440c0 13.3-10.7 24-24 24H480V336 128zM72 128h88V464h-.1-.2-.2-.2H159h-.2-.2-.2H158h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H154h-.2-.2-.2H153h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H150h-.2-.2-.2H149h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H146h-.2-.2-.2H145h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H142h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H139h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H136h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H133h-.2-.2-.2-.2-.2-.2-.2-.2H131h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H128h-.2-.2-.2-.2-.2-.2-.2-.2H126h-.2-.2-.2-.2-.2-.2-.2-.2H124h-.2-.2-.2-.2-.2-.2-.2-.2H122h-.2-.2-.2-.2-.2-.2-.2-.2H120h-.2-.2-.2-.2-.2-.2-.2-.2H118h-.2-.2-.2-.2-.2-.2-.2-.2H116h-.2-.2-.2-.2-.2-.2-.2-.2H114h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H111h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H108h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H105h-.2-.2-.2-.2H104h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H100h-.2-.2-.2-.2H99h-.2-.2-.2-.2H98h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H88h-.2-.2-.2-.2H87h-.2-.2-.2-.2H86h-.2-.2-.2-.2H85h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H82h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H79h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H77h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H75h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H73h-.2-.2-.2-.2-.2H72c-13.2 0-24-10.7-24-24V336h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H48V240h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H48V152c0-13.3 10.7-24 24-24zM208 72c0-13.3 10.7-24 24-24H408c13.3 0 24 10.7 24 24V336 464H368V400c0-26.5-21.5-48-48-48s-48 21.5-48 48v64H208V72zm88 24v24H272c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h24v24c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16V168h24c8.8 0 16-7.2 16-16V136c0-8.8-7.2-16-16-16H344V96c0-8.8-7.2-16-16-16H312c-8.8 0-16 7.2-16 16z"/></svg>
+                </a>
+            </li>
+            <li class="li">
+                <a href="index.html" class="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"/></svg>
+                    <span class="link-text">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+   </header>
+        
+   <main>
+    <div class="container">
+        <header>Medicine</header><br>
+        <div class="container1">
+            <div class="box1" id="box1">
+                <form>
+                    <input id="medName" type="text" placeholder="Name">
+                    <input id="Quantity" type="number" placeholder="Quantity">
+                    <input id="sx" type="date" min="1923-01-01" max={today}>
+                    <input id="ex" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box9">
+                <form>
+                    <input id="medName1" type="text" placeholder="Name">
+                    <input id="Quantity1" type="number" placeholder="Quantity">
+                    <input id="sx1" type="date" min="1923-01-01" max={today} >
+                    <input id="ex1" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box2">
+                <form>
+                    <input id="medName2" type="text" placeholder="Name">
+                    <input id="Quantity2" type="number" placeholder="Quantity">
+                    <input id="sx2" type="date" min="1923-01-01" max={today} >
+                    <input id="ex2" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box3">
+                <form>
+                    <input id="medName3" type="text" placeholder="Name">
+                    <input id="Quantity3" type="number" placeholder="Quantity">
+                    <input id="sx3" type="date" min="1923-01-01" max={today}>
+                    <input id="ex3" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box4">
+                <form>
+                    <input id="medName4" type="text" placeholder="Name">
+                    <input id="Quantity4" type="number" placeholder="Quantity">
+                    <input id="sx4" type="date" min="1923-01-01" max={today}>
+                    <input id="ex4" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box5">
+                <form>
+                    <input id="medName5" type="text" placeholder="Name">
+                    <input id="Quantity5" type="number" placeholder="Quantity">
+                    <input id="sx5" type="date" min="1923-01-01" max={today}>
+                    <input id="ex5" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box6">
+                <form>
+                    <input id="medName6" type="text" placeholder="Name">
+                    <input id="Quantity6" type="number" placeholder="Quantity">
+                    <input id="sx6" type="date" min="1923-01-01" max={today}>
+                    <input id="ex6" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box7">
+                <form>
+                    <input id="medName7" type="text" placeholder="Name">
+                    <input id="Quantity7" type="number" placeholder="Quantity">
+                    <input id="sx7" type="date" min="1923-01-01" max={today}>
+                    <input id="ex7" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box8">
+                <form>
+                    <input id="medName8" type="text" placeholder="Name">
+                    <input id="Quantity8" type="number" placeholder="Quantity">
+                    <input id="sx8" type="date" min="1923-01-01" max={today}>
+                    <input id="ex8" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+            <div class="box" id="box10">
+                <form>
+                    <input id="medName9" type="text" placeholder="Name">
+                    <input id="Quantity9" type="number" placeholder="Quantity">
+                    <input id="sx9" type="date" min="1923-01-01" max={today}>
+                    <input id="ex9" type="date" min={today} max="3000-01-01"><br>
+                </form>
+            </div>
+        </div><br>
+        <div style="margin-left: 47rem;">
+            <button id="medsave">Save</button>
+        </div>
+    </div>
+   </main>
+
+   <footer>
+   </footer>
+   <script type="module" src="index.js"></script>
+</body>
+</html>
